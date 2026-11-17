@@ -1,0 +1,65 @@
+:root{--ink:#0b1b33;--ink2:#13315c;--muted:#51607a;--brand:#0b5ed7;--brand-d:#0846a6;--accent:#ffb020;--bg:#f4f7fb;--card:#fff;--line:#dde4ee;--ok:#0f7b4a;--okbg:#e7f6ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--brand)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.top{background:var(--ink);color:#cfd8e6;font-size:.82rem;padding:8px 0;text-align:center}
+.top b{color:var(--accent)}
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#1f5fd1 0,transparent 60%),linear-gradient(160deg,#0b1b33 0%,#13315c 70%);color:#fff;padding:56px 0 64px}
+.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;background:rgba(255,255,255,.12);padding:5px 12px;border-radius:999px;margin-bottom:16px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block}
+h1{font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.12;margin:0 0 16px;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--accent)}
+.lede{font-size:1.12rem;color:#d7e1f0;margin:0 0 22px;max-width:40em}
+.inside{list-style:none;padding:0;margin:0 0 22px}
+.inside li{padding:7px 0 7px 30px;position:relative}
+.inside li:before{content:"✓";position:absolute;left:0;top:6px;width:20px;height:20px;border-radius:50%;background:rgba(255,176,32,.18);color:var(--accent);font-weight:800;font-size:.8rem;display:grid;place-items:center}
+.bonus{display:flex;gap:12px;align-items:flex-start;background:rgba(255,176,32,.12);border:1px solid rgba(255,176,32,.45);border-radius:12px;padding:14px 16px;color:#fff}
+.bonus b{color:var(--accent)}
+.formcard{background:var(--card);color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.formcard h2{font-size:1.3rem;margin:0 0 4px}
+.small{font-size:.88rem;color:var(--muted);margin:0 0 14px}
+label{display:block;font-size:.85rem;font-weight:600;margin:11px 0 4px}
+input[type=text],input[type=email],input[type=tel]{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;font-size:1rem;background:#fff}
+input:focus{outline:2px solid var(--brand);border-color:var(--brand)}
+.check{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-weight:500;font-size:.9rem;background:#fff8e8;border:1px solid #ffe1a3;border-radius:9px;padding:10px 12px}
+.check input{margin-top:3px;width:18px;height:18px}
+button,.btn{display:inline-block;margin-top:16px;width:100%;background:var(--brand);color:#fff;border:0;border-radius:9px;padding:15px;font-size:1.05rem;font-weight:700;cursor:pointer;text-align:center;text-decoration:none}
+button:hover,.btn:hover{background:var(--brand-d)}
+.btn.alt{background:var(--accent);color:var(--ink)}
+.privacy{font-size:.76rem;color:var(--muted);margin-top:10px}
+section.band{padding:48px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:1.06rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.k{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+.center{text-align:center}
+.cta-row{text-align:center;padding:0 0 56px}
+.cta-row .btn{width:auto;padding:14px 28px}
+#asset{display:none;padding:44px 0}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px;max-width:880px;margin:0 auto}
+.doc h2{margin-top:0}.doc h3{margin:28px 0 8px;color:var(--brand-d)}
+.doc ol,.doc ul{padding-left:22px}.doc li{margin:7px 0}
+.thanks{background:var(--okbg);border:1px solid #b9e4cd;color:var(--ok);border-radius:10px;padding:14px 18px;margin-bottom:24px;font-weight:600}
+.callbox{background:linear-gradient(135deg,#0b1b33,#13315c);color:#fff;border-radius:14px;padding:24px;margin-top:30px}
+.callbox h3{color:var(--accent)!important;margin-top:0!important}
+.callbox p{color:#d7e1f0}
+.more{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.more a{display:block;background:#eef4ff;border-radius:10px;padding:12px 14px;text-decoration:none;font-weight:600;font-size:.92rem}
+.q{background:#f7f9fc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.q p{margin:0 0 8px;font-weight:600}
+.q label{display:inline-flex;gap:6px;align-items:center;margin:0 16px 0 0;font-weight:500}
+.score{font-size:3rem;font-weight:800;color:var(--brand)}
+.meter{height:12px;border-radius:99px;background:#e6ecf5;overflow:hidden;margin:8px 0 16px}.meter i{display:block;height:100%;background:linear-gradient(90deg,#e5484d,#ffb020,#0f7b4a)}
+table.facts{width:100%;border-collapse:collapse;margin:12px 0}table.facts td{border-top:1px solid var(--line);padding:10px 8px;vertical-align:top}table.facts td:first-child{font-weight:700;width:34%}
+.hub .card{display:flex;flex-direction:column;gap:10px}.hub .card .btn{margin-top:auto}
+footer{text-align:center;font-size:.8rem;color:var(--muted);padding:26px 0 40px}
+.print{background:none;color:var(--brand);border:1px solid var(--brand);width:auto;padding:8px 14px;font-size:.9rem;margin:0 0 10px}
+@media (max-width:860px){.grid,.cards,.more{grid-template-columns:1fr}.hero{padding:34px 0 44px}.doc{padding:22px}}
+@media print{.top,.hero,#why,.cta-row,.callbox,.print,footer{display:none!important}#asset{display:block!important;padding:0}.doc{border:0}}
+/* Tata Communications logo in the header strip */
+.top{background:var(--ink) url(/assets/tata-communications-white.png) no-repeat;background-position:max(20px,calc(50vw - 530px)) center;background-size:198px auto;padding:16px max(20px,calc(50vw - 530px)) 16px calc(max(20px,calc(50vw - 530px)) + 222px);text-align:right}
+@media (max-width:860px){.top{background-position:center 14px;background-size:170px auto;padding:42px 16px 10px;text-align:center}}
+@media print{.top{display:none!important}}
